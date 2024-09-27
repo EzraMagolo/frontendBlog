@@ -11,7 +11,7 @@ const Login = ({ setIsLoggedIn, setUserType, setUserName }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/login", {
+      const response = await axios.post("https://blogweb-9heo.onrender.com/login", {
         email,
         password,
       });

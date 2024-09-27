@@ -42,7 +42,7 @@ export default function SignUp() {
 
     setLoading(true); // Start loading state
 
-    fetch("http://localhost:5000/register", {
+    fetch("https://blogweb-9heo.onrender.com/register", {
       method: "POST",
       crossDomain: true,
       headers: {

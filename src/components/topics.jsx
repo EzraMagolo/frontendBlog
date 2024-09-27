@@ -10,7 +10,7 @@ const Topics = () => {
   useEffect(() => {
     const fetchTopics = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/tags'); // Adjust this endpoint as needed
+        const response = await axios.get('https://blogweb-9heo.onrender.com/tags'); // Adjust this endpoint as needed
         setTopics(response.data); // Set the unique tags directly
       } catch (err) {
         console.error('Error fetching topics:', err);

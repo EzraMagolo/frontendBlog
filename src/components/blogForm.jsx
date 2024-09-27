@@ -22,7 +22,7 @@ const BlogForm = ({ userId }) => { // Accept userId as a prop
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/create-blog', blog);
+      await axios.post('https://blogweb-9heo.onrender.com/create-blog', blog);
       alert('Blog created successfully');
       setBlog({
         title: '',

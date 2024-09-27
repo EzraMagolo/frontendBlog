@@ -10,7 +10,7 @@ const BlogPost = () => {
     const fetchData = async () => {
       try {
         console.log('Fetching data for ID:', id); // Log the ID being used
-        const response = await axios.get(`http://localhost:5000/blogs/${id}`);
+        const response = await axios.get(`https://blogweb-9heo.onrender.com/${id}`);
         console.log('API Response:', response.data); // Log response
         if (response.data.status === 'ok') {
           setData(response.data.data);

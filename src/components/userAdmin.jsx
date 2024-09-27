@@ -30,9 +30,9 @@ const UserAdmin = () => {
   const handleAddUser = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/register", newUser);
+      await axios.post("https://blogweb-9heo.onrender.com/register", newUser);
       setNewUser({ fname: "", lname: "", email: "", password: "", userType: "" });
-      const response = await axios.get("http://localhost:5000/get-users");
+      const response = await axios.get("https://blogweb-9heo.onrender.com/get-users");
       if (response.data.status === "ok") {
         setUsers(response.data.data);
       }
@@ -43,7 +43,7 @@ const UserAdmin = () => {
 
   const handleDeleteUser = async (userId) => {
     try {
-      await axios.delete(`http://localhost:5000/delete-user/${userId}`);
+      await axios.delete(`https://blogweb-9heo.onrender.com/delete-user/${userId}`);
       setUsers(users.filter(user => user._id !== userId));
     } catch (error) {
       console.error("Error deleting user:", error);

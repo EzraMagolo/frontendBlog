@@ -11,7 +11,7 @@ const ForgotPassword = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/forgot-password", { email });
+      const response = await axios.post("https://blogweb-9heo.onrender.com/forgot-password", { email });
       if (response.data.status === "ok") {
         setMessage("Password reset link sent to your email.");
       } else {

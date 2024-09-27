@@ -18,7 +18,7 @@ const BlogContainer = () => {
   useEffect(() => {
     const fetchBlogs = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/blogs');
+        const response = await axios.get('https://blogweb-9heo.onrender.com/blogs');
         setBlogs(response.data);
         setFilteredBlogs(response.data); // Initially, all blogs are shown
         setLoading(false);

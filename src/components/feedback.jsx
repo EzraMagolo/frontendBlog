@@ -8,7 +8,7 @@ const Feedback = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:5000/submit-feedback', {
+      const response = await fetch('https://blogweb-9heo.onrender.com/submit-feedback', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

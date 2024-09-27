@@ -9,7 +9,7 @@ const Products = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/products'); // Replace with your API endpoint
+        const response = await axios.get('https://blogweb-9heo.onrender.com/products'); // Replace with your API endpoint
         setProducts(response.data);
       } catch (err) {
         setError('Failed to fetch products');
